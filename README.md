@@ -1,16 +1,43 @@
-# React + Vite
+# Monster Energy Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un sitio web interactivo desarrollado con React y Vite para展示 diferentas sabores de Monster Energy, con cambios de tema dinámicos y una interfaz moderna.
 
-Currently, two official plugins are available:
+## Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Temas Dinámicos:** El fondo y los colores de la interfaz cambian automáticamente según el sabor seleccionado.
+- **Transiciones con Framer Motion:** Animaciones fluidas al cambiar entre productos y abrir el carrito.
+- **Sección de Comunidad:** Espacio para contenido relacionado con skate, racing y gaming.
+- **Carrito de Compras:** Sistema funcional para añadir productos y gestionar cantidades.
 
-## React Compiler
+## Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React 18**
+- **Vite** (Build Tool)
+- **Framer Motion** (Animaciones)
+- **Lucide React** (Iconografía)
+- **CSS Nativo** (Variables para el sistema de temas)
 
-## Expanding the ESLint configuration
+## Instalación y Uso
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Si quieres probarlo localmente, sigue estos pasos:
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/gmatflo/monster-landing.git
+   ```
+
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicia el servidor de desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+## Detalles Técnicos
+
+El proyecto utiliza variables de CSS (`--bg-color`, `--accent-color`, etc.) que se actualizan mediante un `useEffect` en `App.jsx` cada vez que el usuario navega por el carrusel de sabores. Los datos de cada sabor están centralizados en `FlavorData.js`.
+
+
